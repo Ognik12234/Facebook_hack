@@ -74,10 +74,14 @@ class FaceBoom(object):
             idre = re.compile('(?<="userID":").*?(?=")')
             con = requests.get(target_profile).text
             idis = idre.search(con).group()
-            print(wi+"\n["+gr+"+"+wi+"]"+gr+" Target Profile"+wi+" ID: "+yl+idis+wi)
+            print(wi+"\
+                  n["+gr+"+"+wi+"]"+gr+" Target Profile"+wi+" ID: "+yl+idis+wi)
         except Exception:
             errMsg("Please Check Your Victim's Profile URL")
             sys.exit(1)
+
+http://facebook.com/profile.php/?id=100025725226
+722
 
 
     def login(self,target, password):
@@ -123,7 +127,8 @@ class FaceBoom(object):
 
 
     @staticmethod
-    def updateFacebook_hack():
+    def 
+updateFacebook_hack():
         if not os.path.isfile(versionPath):
              errMsg("Unable to check for updates: please re-clone the script to fix this problem")
              sys.exit(1)
@@ -150,7 +155,8 @@ Usage: python facebook_hack.py [OPTIONS...]
 OPTIONS:
        |
     |--------
-    | -t <target email> [OR] <FACEBOOK ID>    ::> Specify target Email [OR] Target Profile ID
+    
+                               -t <target email> [OR] <FACEBOOK ID>    ::> Specify target Email [OR] Target Profile ID
     |--------
     | -w <wordlist Path>                      ::> Specify Wordlist File Path
     |--------
